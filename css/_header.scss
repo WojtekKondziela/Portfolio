@@ -12,6 +12,10 @@
 
 .nav-item{
     padding: 0 10px;
+    border-radius: 5px;
+    &:hover{
+        background: #eeeeee;
+    }
 }
 
 @media only screen and (max-width: 700px) {
