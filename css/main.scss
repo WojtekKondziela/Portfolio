@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import './header';
+@import './aboutme';
+@import './experience';
 
 body{
     margin: 0;
@@ -7,37 +10,7 @@ body{
     scroll-behavior: smooth;
 }
 
-.header-background{
-    height: 350px;
-    background-image: linear-gradient(
-        rgba(158, 33, 170, 0.5),
-        rgba(139, 40, 78, 0.5)
-    ), url(../img/header/coding.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-@media only screen and (max-width: 700px) {
-
-    .header-background{
-        height: 250px;
-    }
-
-
-}
-
-.nav-item{
-    padding: 0 10px;
-}
-
-.name-heading{
-    font-size: 300%;
-    letter-spacing: -1px;
-    font-weight: 700;
-    color: #303030;
-}
-
 .par{
     font-size: 125%;
+    text-align: justify;
 }

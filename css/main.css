@@ -1,18 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Comfortaa', cursive;
-  scroll-behavior: smooth;
-}
-
 .header-background {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(158, 33, 170, 0.5)), to(rgba(139, 40, 78, 0.5))), url("../img/header/coding.jpg");
+  background-image: linear-gradient(rgba(158, 33, 170, 0.5), rgba(139, 40, 78, 0.5)), url("../img/header/coding.jpg");
   height: 350px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(158, 33, 170, 0.5)), to(rgba(139, 40, 78, 0.5))), url(../img/header/coding.jpg);
-  background-image: linear-gradient(rgba(158, 33, 170, 0.5), rgba(139, 40, 78, 0.5)), url(../img/header/coding.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.nav-item {
+  padding: 0 10px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -21,18 +18,53 @@ body {
   }
 }
 
-.nav-item {
-  padding: 0 10px;
-}
-
 .name-heading {
   font-size: 300%;
   letter-spacing: -1px;
   font-weight: 700;
   color: #303030;
+  padding-top: 30px;
+}
+
+.exp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(158, 33, 170, 0.5)), to(rgba(139, 40, 78, 0.5))), url("../img/parallax/exp.jpeg");
+  background-image: linear-gradient(rgba(158, 33, 170, 0.5), rgba(139, 40, 78, 0.5)), url("../img/parallax/exp.jpeg");
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.experience {
+  min-height: 500px;
+}
+
+@media only screen and (max-width: 700px) {
+  .exp {
+    height: 250px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comfortaa', cursive;
+  scroll-behavior: smooth;
 }
 
 .par {
   font-size: 125%;
+  text-align: justify;
 }
 /*# sourceMappingURL=main.css.map */
