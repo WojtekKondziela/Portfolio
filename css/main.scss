@@ -3,9 +3,24 @@
 @import './aboutme';
 @import './experience';
 @import './skills';
+@import './variables';
 
 *{
     box-sizing: border-box;
+}
+
+*::selection{
+    background-color: $gradientFirstColor;
+    color: #fff;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(158, 33, 170, 0.7);
+    border-radius: 3px;
 }
 
 body{

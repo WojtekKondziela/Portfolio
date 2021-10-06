@@ -8,7 +8,7 @@
 .exp__parallax{
 
     @include flexCenter();
-    @include parallaxBackground('../img/parallax/exp.jpeg');
+    @include parallaxBackground('../img/parallax/teamwork.jpeg');
     @include fitBackgroundIntoParallax();
 
     color: #fff;
@@ -44,6 +44,16 @@
         right: 30px;
         color: rgba(158, 33, 170, 1);
     }
+}
+
+.experience a.scroll-to-projects{
+    text-decoration: none;
+    color: #303030;
+    width: auto;
+}
+
+a.scroll-to-projects i:hover{
+    color: $gradientFirstColor;
 }
 
 @media only screen and (max-width: 700px) {

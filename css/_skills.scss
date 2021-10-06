@@ -2,7 +2,7 @@
 
 .skills__parallax{
     @include flexCenter();
-    @include parallaxBackground('../img/parallax/coding.jpg');
+    @include parallaxBackground('../img/parallax/coding.jpeg');
     @include fitBackgroundIntoParallax();
 
     color: #fff;

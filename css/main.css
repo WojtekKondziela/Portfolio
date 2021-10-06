@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 .header-background {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(158, 33, 170, 0.5)), to(rgba(139, 40, 78, 0.5))), url("../img/parallax/skills.jpg");
-  background-image: linear-gradient(rgba(158, 33, 170, 0.5), rgba(139, 40, 78, 0.5)), url("../img/parallax/skills.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(158, 33, 170, 0.5)), to(rgba(139, 40, 78, 0.5))), url("../img/parallax/header.jpeg");
+  background-image: linear-gradient(rgba(158, 33, 170, 0.5), rgba(139, 40, 78, 0.5)), url("../img/parallax/header.jpeg");
   height: 300px;
   background-position: center;
   background-repeat: no-repeat;
@@ -51,8 +51,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(158, 33, 170, 0.5)), to(rgba(139, 40, 78, 0.5))), url("../img/parallax/exp.jpeg");
-  background-image: linear-gradient(rgba(158, 33, 170, 0.5), rgba(139, 40, 78, 0.5)), url("../img/parallax/exp.jpeg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(158, 33, 170, 0.5)), to(rgba(139, 40, 78, 0.5))), url("../img/parallax/teamwork.jpeg");
+  background-image: linear-gradient(rgba(158, 33, 170, 0.5), rgba(139, 40, 78, 0.5)), url("../img/parallax/teamwork.jpeg");
   height: 300px;
   background-position: center;
   background-repeat: no-repeat;
@@ -93,6 +93,16 @@
   color: #9e21aa;
 }
 
+.experience a.scroll-to-projects {
+  text-decoration: none;
+  color: #303030;
+  width: auto;
+}
+
+a.scroll-to-projects i:hover {
+  color: rgba(158, 33, 170, 0.5);
+}
+
 @media only screen and (max-width: 700px) {
   .exp {
     height: 250px;
@@ -109,8 +119,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(158, 33, 170, 0.5)), to(rgba(139, 40, 78, 0.5))), url("../img/parallax/coding.jpg");
-  background-image: linear-gradient(rgba(158, 33, 170, 0.5), rgba(139, 40, 78, 0.5)), url("../img/parallax/coding.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(158, 33, 170, 0.5)), to(rgba(139, 40, 78, 0.5))), url("../img/parallax/coding.jpeg");
+  background-image: linear-gradient(rgba(158, 33, 170, 0.5), rgba(139, 40, 78, 0.5)), url("../img/parallax/coding.jpeg");
   height: 300px;
   background-position: center;
   background-repeat: no-repeat;
@@ -126,6 +136,25 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+*::-moz-selection {
+  background-color: rgba(158, 33, 170, 0.5);
+  color: #fff;
+}
+
+*::selection {
+  background-color: rgba(158, 33, 170, 0.5);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(158, 33, 170, 0.7);
+  border-radius: 3px;
 }
 
 body {

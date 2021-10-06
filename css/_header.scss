@@ -2,7 +2,7 @@
 
 .header-background{
 
-    @include parallaxBackground('../img/parallax/skills.jpg');
+    @include parallaxBackground('../img/parallax/header.jpeg');
     @include fitBackgroundIntoParallax();
     height: 350px;
 
