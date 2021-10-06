@@ -133,6 +133,50 @@ a.scroll-to-projects i:hover {
   min-height: 500px;
 }
 
+.up-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: rgba(158, 33, 170, 0.7);
+  font-size: 30px;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  position: fixed;
+  right: 25px;
+  bottom: 16px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  cursor: pointer;
+}
+
+.up-button:hover {
+  color: #fff;
+}
+
+.up-button.active {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1000px) {
+  .up-button,
+  .up-button.active {
+    display: none;
+    pointer-events: none;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
