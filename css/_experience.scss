@@ -1,20 +1,49 @@
 @import './mixins';
+@import './variables';
 
-.exp{
+.experience{
+    min-height: 100vh;
+}
+
+.exp__parallax{
 
     @include flexCenter();
     @include parallaxBackground('../img/parallax/exp.jpeg');
+    @include fitBackgroundIntoParallax();
 
-    height: 350px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     color: #fff;
 }
 
-.experience{
-    min-height: 500px;
+.exp-card{
+    padding: 20px;
+    border: 1px solid $gradientFirstColor;
+    border-radius: 10px;
+    position: relative;
+
+    h5{
+        padding: 5px;
+    }
+
+    h6{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    h5, h6{
+        text-align: center;
+    }
+
+    p{
+        padding: 7px;
+    }
+
+    a{
+        display: block;
+        position: absolute;
+        bottom: 15px;
+        right: 30px;
+        color: rgba(158, 33, 170, 1);
+    }
 }
 
 @media only screen and (max-width: 700px) {

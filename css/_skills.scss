@@ -1,0 +1,13 @@
+@import './mixins';
+
+.skills__parallax{
+    @include flexCenter();
+    @include parallaxBackground('../img/parallax/coding.jpg');
+    @include fitBackgroundIntoParallax();
+
+    color: #fff;
+}
+
+.skills{
+    min-height: 500px;
+}

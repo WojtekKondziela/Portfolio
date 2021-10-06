@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 .header-background {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(158, 33, 170, 0.5)), to(rgba(139, 40, 78, 0.5))), url("../img/header/coding.jpg");
-  background-image: linear-gradient(rgba(158, 33, 170, 0.5), rgba(139, 40, 78, 0.5)), url("../img/header/coding.jpg");
-  height: 350px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(158, 33, 170, 0.5)), to(rgba(139, 40, 78, 0.5))), url("../img/parallax/skills.jpg");
+  background-image: linear-gradient(rgba(158, 33, 170, 0.5), rgba(139, 40, 78, 0.5)), url("../img/parallax/skills.jpg");
+  height: 300px;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
+  height: 350px;
 }
 
 .nav-item {
@@ -23,6 +25,10 @@
   }
 }
 
+.aboutme {
+  min-height: 100vh;
+}
+
 .name-heading {
   font-size: 300%;
   letter-spacing: -1px;
@@ -31,7 +37,11 @@
   padding-top: 30px;
 }
 
-.exp {
+.experience {
+  min-height: 100vh;
+}
+
+.exp__parallax {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,7 +53,7 @@
           justify-content: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(158, 33, 170, 0.5)), to(rgba(139, 40, 78, 0.5))), url("../img/parallax/exp.jpeg");
   background-image: linear-gradient(rgba(158, 33, 170, 0.5), rgba(139, 40, 78, 0.5)), url("../img/parallax/exp.jpeg");
-  height: 350px;
+  height: 300px;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -51,14 +61,71 @@
   color: #fff;
 }
 
-.experience {
-  min-height: 500px;
+.exp-card {
+  padding: 20px;
+  border: 1px solid rgba(158, 33, 170, 0.5);
+  border-radius: 10px;
+  position: relative;
+}
+
+.exp-card h5 {
+  padding: 5px;
+}
+
+.exp-card h6 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.exp-card h5, .exp-card h6 {
+  text-align: center;
+}
+
+.exp-card p {
+  padding: 7px;
+}
+
+.exp-card a {
+  display: block;
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+  color: #9e21aa;
 }
 
 @media only screen and (max-width: 700px) {
   .exp {
     height: 250px;
   }
+}
+
+.skills__parallax {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(158, 33, 170, 0.5)), to(rgba(139, 40, 78, 0.5))), url("../img/parallax/coding.jpg");
+  background-image: linear-gradient(rgba(158, 33, 170, 0.5), rgba(139, 40, 78, 0.5)), url("../img/parallax/coding.jpg");
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.skills {
+  min-height: 500px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -71,5 +138,14 @@ body {
 .par {
   font-size: 125%;
   text-align: justify;
+}
+
+.center-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 /*# sourceMappingURL=main.css.map */

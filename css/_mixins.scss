@@ -16,3 +16,13 @@
     ), url($imgPath);
 
 }
+
+@mixin fitBackgroundIntoParallax {
+
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
