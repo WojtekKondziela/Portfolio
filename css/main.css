@@ -1,13 +1,100 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600&display=swap");
+.typewriter {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #303030;
+  font-weight: 600;
+  font-family: "Source Code Pro", monospace;
+  font-size: 70px;
+  margin-top: -50px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .typewriter span {
+    position: relative;
+  }
+  .typewriter span::before, .typewriter span::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .typewriter span::before {
+    background: #fff;
+    -webkit-animation: typewriter 7s steps(26) 1s forwards;
+            animation: typewriter 7s steps(26) 1s forwards;
+  }
+  .typewriter span::after {
+    width: 0.1em;
+    background: #303030;
+    -webkit-animation: typewriter 7s steps(26) 1s forwards, blinker 0.75s steps(26) infinite;
+            animation: typewriter 7s steps(26) 1s forwards, blinker 0.75s steps(26) infinite;
+  }
+  @-webkit-keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  @-webkit-keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes showAllHeaderEl {
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes showAllHeaderEl {
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .typewriter {
+    height: 250px;
+  }
+  .typewriter span {
+    display: none;
+  }
+}
+
+header {
+  position: relative;
+}
+
+nav {
+  opacity: 0;
+  -webkit-animation: showAllHeaderEl 2s ease 8.5s forwards;
+          animation: showAllHeaderEl 2s ease 8.5s forwards;
+}
+
 .header-background {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(158, 33, 170, 0.5)), to(rgba(139, 40, 78, 0.5))), url("../img/parallax/header.jpeg");
-  background-image: linear-gradient(rgba(158, 33, 170, 0.5), rgba(139, 40, 78, 0.5)), url("../img/parallax/header.jpeg");
-  height: 300px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 350px;
+  background-color: #fff;
+  height: 100vh;
 }
 
 .nav-item {
@@ -19,9 +106,38 @@
   background: #eeeeee;
 }
 
+header a.scroll-down-to-site {
+  text-decoration: none;
+  color: #303030;
+  width: auto;
+  font-size: 50px;
+}
+
+.scroll-down-to-site {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50px);
+          transform: translate(-50%, -50px);
+  opacity: 0;
+  -webkit-animation: showAllHeaderEl 2s ease 8.5s forwards;
+          animation: showAllHeaderEl 2s ease 8.5s forwards;
+}
+
+header a.scroll-down-to-site i:hover {
+  color: rgba(158, 33, 170, 0.5);
+}
+
 @media only screen and (max-width: 700px) {
   .header-background {
     height: 250px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  nav,
+  .scroll-down-to-site {
+    opacity: 1;
   }
 }
 
@@ -221,6 +337,30 @@ a.scroll-to-projects i:hover {
     display: none;
     pointer-events: none;
   }
+}
+
+.projects__parallax {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(158, 33, 170, 0.5)), to(rgba(139, 40, 78, 0.5))), url("../img/parallax/project.jpg");
+  background-image: linear-gradient(rgba(158, 33, 170, 0.5), rgba(139, 40, 78, 0.5)), url("../img/parallax/project.jpg");
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.projects {
+  min-height: 100vh;
 }
 
 * {

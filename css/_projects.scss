@@ -1,0 +1,13 @@
+@import './mixins';
+
+.projects__parallax{
+    @include flexCenter();
+    @include parallaxBackground('../img/parallax/project.jpg');
+    @include fitBackgroundIntoParallax();
+
+    color: #fff;
+}
+
+.projects{
+    min-height: 100vh;
+}

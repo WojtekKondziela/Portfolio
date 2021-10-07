@@ -1,10 +1,20 @@
 @import './mixins';
+@import './typewriter';
+@import './variables';
+
+header{
+    position: relative;
+}
+
+nav{
+    opacity: 0;
+    animation: showAllHeaderEl 2s ease $typewriterSpeed + 1.5s forwards;
+}
 
 .header-background{
 
-    @include parallaxBackground('../img/parallax/header.jpeg');
-    @include fitBackgroundIntoParallax();
-    height: 350px;
+    background-color: #fff;
+    height: 100vh;
 
 }
 
@@ -16,11 +26,40 @@
     }
 }
 
+header a.scroll-down-to-site{
+    text-decoration: none;
+    color: #303030;
+    width: auto;
+    font-size: 50px;
+}
+
+.scroll-down-to-site{
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%, -50px);
+    opacity: 0;
+    animation: showAllHeaderEl 2s ease $typewriterSpeed + 1.5s forwards;
+}
+
+header a.scroll-down-to-site i:hover{
+    color: $gradientFirstColor;
+}
+
+
 @media only screen and (max-width: 700px) {
 
     .header-background{
         height: 250px;
     }
 
+}
+
+@media only screen and (max-width: 1199px) {
+
+    nav,
+    .scroll-down-to-site{
+        opacity: 1;
+    }
 
 }

@@ -1,0 +1,71 @@
+$typewriterSpeed: 7s;
+$steps: 26;
+
+.typewriter {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #303030;
+    font-weight: 600;
+    font-family: "Source Code Pro", monospace;
+    font-size: 70px;
+    margin-top: -50px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .typewriter {
+        span {
+            position: relative;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+            }
+
+            &::before {
+                background: #fff;
+                animation: typewriter $typewriterSpeed steps($steps) 1s forwards;
+            }
+
+            &::after {
+                width: 0.1em;
+                background: #303030;
+                animation: typewriter $typewriterSpeed steps($steps) 1s forwards, blinker 0.75s steps($steps) infinite;
+            }
+        }
+    }
+
+    @keyframes typewriter {
+        to {
+            left: 100%;
+        }
+    }
+
+    @keyframes blinker {
+        50% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes showAllHeaderEl {
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .typewriter {
+        height: 250px;
+
+        span {
+            display: none;
+        }
+    }
+}

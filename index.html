@@ -24,6 +24,9 @@
         <div class="collapse navbar-collapse justify-content-center" id="collapsing-navbar">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item active">
               <a class="nav-link" aria-current="page" href="#aboutme__hook">O mnie</a>
             </li>
             <li class="nav-item">
@@ -33,7 +36,7 @@
               <a class="nav-link" aria-current="page" href="#skills__hook">Umiejętności</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projekty</a>
+              <a class="nav-link" href="#projects__hook">Projekty</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Kontakt</a>
@@ -42,19 +45,22 @@
         </div>
       </div>
     </nav>
-    <div class="p-5 bg-image header-background"">
+    <div class="p-5 header-background typewriter">
+      <span id='typewriterHeading'>Cześć, mam na imię Wojtek.</span>
+      <!-- <span class='blink'>|</span> -->
     </div>
     </div>
+    <a href='#aboutme__hook' class='scroll-down-to-site'><i class="fas fa-chevron-down scroll-down-to-site"></i></a>
   </header>
-  <div id="aboutme__hook"></div>
+  <div id="aboutme__hook" class='mb-5'></div>
   <main class='main' id='main'>
     <section class="aboutme p-4" id='aboutme'>
-      <h1 class='text-center name-heading'>Wojciech Kondziela</h1>
+      <h1 class='text-center name-heading'>Kilka słów o mnie</h1>
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-xl-7 mx-auto">
             <p class='par mt-5'>
-              Cześć, mam na imię Wojtek. Mam 18 lat i stawiam swoje pierwsze kroki w programowaniu. Interesuję się
+              Cześć, nazywam się Wojciech Kondziela. Mam 18 lat i stawiam swoje pierwsze kroki w programowaniu. Interesuję się
               technologiami związanymi z tworzeniem stron i serwisów Internetowych, a także interfejsów użytkownika.
               Należą do nich przede wszystkim React, Sass, MDBootstrap, a także różnorakie mniejsze biblioteki
               JavaScript
@@ -92,7 +98,7 @@
             <h5 class='card-title'>Serwisy Internetowe Bartosz Klimas</h5>
             <h6 class='card-subtitle'>październik 2021</h6>
             <p class='card-text'>
-              Praktyka zawodowa. Doskonalenie w tworzenie stron i serwisów Internetowych. 
+              Praktyka zawodowa. Doskonalenie w tworzeniu stron i serwisów Internetowych. 
             </p>
             <a href="https://bartoszklimas.com" class='card-link' target="_blank">Bartosz Klimas <i class="fas fa-arrow-right"></i></a>
           </div>
@@ -208,6 +214,12 @@
           </div>
         </div>
       </div>
+    </section>
+    <div class="projects__parallax" id='projects__hook'>
+      <h2>Projekty</h2>
+    </div>
+    <section class="projects">
+
     </section>
     </main>
 
