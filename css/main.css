@@ -63,7 +63,7 @@
 
 .exp-card {
   padding: 20px;
-  border: 1px solid rgba(158, 33, 170, 0.5);
+  border: 2px solid rgba(158, 33, 170, 0.5);
   border-radius: 10px;
   position: relative;
 }
@@ -130,7 +130,40 @@ a.scroll-to-projects i:hover {
 }
 
 .skills {
-  min-height: 500px;
+  min-height: 100vh;
+  background: #fff;
+}
+
+.skills h4 {
+  color: #303030;
+}
+
+.tech-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.gallery__item {
+  position: relative;
+  height: auto;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gallery__item img {
+  width: 100%;
 }
 
 .up-button {
