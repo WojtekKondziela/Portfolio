@@ -1,0 +1,29 @@
+@import './mixins';
+
+.contact__parallax{
+    @include flexCenter();
+    @include parallaxBackground('../img/parallax/contact.jpeg');
+    @include fitBackgroundIntoParallax();
+
+    color: #fff;
+}
+
+.submit-btn{
+    background-color: rgba(158, 33, 170, 1);
+    color: #fff;
+
+    &:hover{
+        color: #fff;
+        background-color: rgba(158, 33, 170, 0.8);
+    }
+}
+
+.form-control:focus~.form-label{
+    color:rgba(158, 33, 170, 1) !important;
+}
+
+form-control:focus~.form-notch .form-notch-trailing{
+    border-top:.125rem solid rgba(158, 33, 170, 1) !important;
+    border-bottom:.125rem solid rgba(158, 33, 170, 1) !important;
+    border-right:.125rem solid rgba(158, 33, 170, 1) !important;
+}

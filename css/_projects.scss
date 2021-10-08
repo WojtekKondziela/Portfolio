@@ -11,3 +11,19 @@
 .projects{
     min-height: 100vh;
 }
+
+.project-gallery{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 982px) {
+
+    .project-gallery{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0 !important;
+    }
+
+}

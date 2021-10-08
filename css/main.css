@@ -125,13 +125,13 @@ header a.scroll-down-to-site {
 }
 
 header a.scroll-down-to-site i:hover {
-  color: rgba(158, 33, 170, 0.5);
+  color: rgba(176, 33, 189, 0.5);
 }
 
 @media only screen and (max-width: 700px) {
   .header-background {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(158, 33, 170, 0.5)), to(rgba(139, 40, 78, 0.5))), url("../img/parallax/header.jpeg");
-    background-image: linear-gradient(rgba(158, 33, 170, 0.5), rgba(139, 40, 78, 0.5)), url("../img/parallax/header.jpeg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(176, 33, 189, 0.5)), to(rgba(139, 40, 78, 0.5))), url("../img/parallax/header.jpeg");
+    background-image: linear-gradient(rgba(176, 33, 189, 0.5), rgba(139, 40, 78, 0.5)), url("../img/parallax/header.jpeg");
     height: 300px;
     background-position: center;
     background-repeat: no-repeat;
@@ -177,8 +177,8 @@ header a.scroll-down-to-site i:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(158, 33, 170, 0.5)), to(rgba(139, 40, 78, 0.5))), url("../img/parallax/teamwork.jpeg");
-  background-image: linear-gradient(rgba(158, 33, 170, 0.5), rgba(139, 40, 78, 0.5)), url("../img/parallax/teamwork.jpeg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(176, 33, 189, 0.5)), to(rgba(139, 40, 78, 0.5))), url("../img/parallax/teamwork.jpeg");
+  background-image: linear-gradient(rgba(176, 33, 189, 0.5), rgba(139, 40, 78, 0.5)), url("../img/parallax/teamwork.jpeg");
   height: 300px;
   background-position: center;
   background-repeat: no-repeat;
@@ -189,7 +189,7 @@ header a.scroll-down-to-site i:hover {
 
 .exp-card {
   padding: 20px;
-  border: 2px solid rgba(158, 33, 170, 0.5);
+  border: 2px solid rgba(176, 33, 189, 0.5);
   border-radius: 10px;
   position: relative;
 }
@@ -226,7 +226,7 @@ header a.scroll-down-to-site i:hover {
 }
 
 a.scroll-to-projects i:hover {
-  color: rgba(158, 33, 170, 0.5);
+  color: rgba(176, 33, 189, 0.5);
 }
 
 @media only screen and (max-width: 700px) {
@@ -245,8 +245,8 @@ a.scroll-to-projects i:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(158, 33, 170, 0.5)), to(rgba(139, 40, 78, 0.5))), url("../img/parallax/coding.jpeg");
-  background-image: linear-gradient(rgba(158, 33, 170, 0.5), rgba(139, 40, 78, 0.5)), url("../img/parallax/coding.jpeg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(176, 33, 189, 0.5)), to(rgba(139, 40, 78, 0.5))), url("../img/parallax/coding.jpeg");
+  background-image: linear-gradient(rgba(176, 33, 189, 0.5), rgba(139, 40, 78, 0.5)), url("../img/parallax/coding.jpeg");
   height: 300px;
   background-position: center;
   background-repeat: no-repeat;
@@ -359,8 +359,8 @@ a.scroll-to-projects i:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(158, 33, 170, 0.5)), to(rgba(139, 40, 78, 0.5))), url("../img/parallax/project.jpg");
-  background-image: linear-gradient(rgba(158, 33, 170, 0.5), rgba(139, 40, 78, 0.5)), url("../img/parallax/project.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(176, 33, 189, 0.5)), to(rgba(139, 40, 78, 0.5))), url("../img/parallax/project.jpg");
+  background-image: linear-gradient(rgba(176, 33, 189, 0.5), rgba(139, 40, 78, 0.5)), url("../img/parallax/project.jpg");
   height: 300px;
   background-position: center;
   background-repeat: no-repeat;
@@ -373,18 +373,83 @@ a.scroll-to-projects i:hover {
   min-height: 100vh;
 }
 
+.project-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 982px) {
+  .project-gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0 !important;
+  }
+}
+
+.contact__parallax {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(176, 33, 189, 0.5)), to(rgba(139, 40, 78, 0.5))), url("../img/parallax/contact.jpeg");
+  background-image: linear-gradient(rgba(176, 33, 189, 0.5), rgba(139, 40, 78, 0.5)), url("../img/parallax/contact.jpeg");
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.submit-btn {
+  background-color: #9e21aa;
+  color: #fff;
+}
+
+.submit-btn:hover {
+  color: #fff;
+  background-color: rgba(158, 33, 170, 0.8);
+}
+
+.form-control:focus ~ .form-label {
+  color: #9e21aa !important;
+}
+
+form-control:focus ~ .form-notch .form-notch-trailing {
+  border-top: 0.125rem solid #9e21aa !important;
+  border-bottom: 0.125rem solid #9e21aa !important;
+  border-right: 0.125rem solid #9e21aa !important;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 *::-moz-selection {
-  background-color: rgba(158, 33, 170, 0.5);
+  background-color: rgba(176, 33, 189, 0.5);
   color: #fff;
 }
 
 *::selection {
-  background-color: rgba(158, 33, 170, 0.5);
+  background-color: rgba(176, 33, 189, 0.5);
   color: #fff;
 }
 
