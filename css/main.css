@@ -130,7 +130,17 @@ header a.scroll-down-to-site i:hover {
 
 @media only screen and (max-width: 700px) {
   .header-background {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(158, 33, 170, 0.5)), to(rgba(139, 40, 78, 0.5))), url("../img/parallax/header.jpeg");
+    background-image: linear-gradient(rgba(158, 33, 170, 0.5), rgba(139, 40, 78, 0.5)), url("../img/parallax/header.jpeg");
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     height: 250px;
+  }
+  .scroll-down-to-site {
+    display: none;
   }
 }
 

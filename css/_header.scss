@@ -50,7 +50,13 @@ header a.scroll-down-to-site i:hover{
 @media only screen and (max-width: 700px) {
 
     .header-background{
+        @include parallaxBackground('../img/parallax/header.jpeg');
+        @include fitBackgroundIntoParallax();
         height: 250px;
+    }
+
+    .scroll-down-to-site{
+        display: none;
     }
 
 }
