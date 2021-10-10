@@ -126,22 +126,6 @@
             </p>
             <a href="" class='card-link' target="_blank">- <i class="fas fa-arrow-right"></i></a>
           </div>
-          <!--<div class="exp-card my-3 col-lg-5">
-            <h5 class='card-title'>KSIBB</h5>
-            <h6 class='card-subtitle'>rok szkolny 2020 / 2021</h6>
-            <p class='card-text'>
-              Praktyka zawodowa. Nauka podstaw React'a oraz React Redux'a. Praca nad elementami aplikacji CMM dostępnej dla systemu MONACO.
-            </p>
-            <a href="https://www.ksibb.com.pl" target="_blank" class='card-link'>KSIBB <i class="fas fa-arrow-right"></i></a>
-          </div>
-          <div class="exp-card my-3 col-lg-5">
-            <h5 class='card-title'>Serwisy Internetowe Bartosz Klimas</h5>
-            <h6 class='card-subtitle'>październik 2021</h6>
-            <p class='card-text'>
-              Praktyka zawodowa. Doskonalenie w tworzenie stron i serwisów Internetowych. 
-            </p>
-            <a href="https://bartoszklimas.com" target="_blank" class='card-link'>Bartosz Klimas <i class="fas fa-arrow-right"></i></a>
-          </div>-->
           <h4 class='mt-5'>Dodatkowo</h4>
           <p class='mt-4' style='font-size: 125%;'>Mam na swoim koncie kilka swoich projektów. Są to między innymi sklep Internetowy "Overcoated" z modą męską, czy też strona buira podróży organizującego wycieczki po najpiękniejszych miastach Europy. Część z nich to projekty szkolne, a część to W sekcji projekty możesz znaleźć fragmenty wyżej wymienionych witryn.</p>
           <a href='#projects__hook' class='scroll-to-projects mt-5'><i class="fas fa-chevron-down" style='font-size: 180%;'></i></a>
@@ -158,38 +142,38 @@
           <h4 class='mt-5 mb-3 text-center'>Języki oraz technologie, które używam</h4>
           <div class="tech-gallery col-md-10 mt-4 mx-auto">
               <div class="gallery__item col-md-2">
-                <img src="img/technologies/html.png" alt="">
+                <img src="img/technologies/html.png" data-tilt data-tilt-scale='1.1' alt="">
               </div>
               <div class="gallery__item col-md-2">
-                <img src="img/technologies/css.png" alt="">
+                <img src="img/technologies/css.png" data-tilt data-tilt-scale='1.1' alt="">
               </div>
               <div class="gallery__item col-md-2">
-                <img src="img/technologies/scss.png" alt="">
+                <img src="img/technologies/scss.png" data-tilt data-tilt-scale='1.1' alt="">
               </div>
               <div class="gallery__item col-md-2">
-                <img src="img/technologies/js.png" alt="">
+                <img src="img/technologies/js.png" data-tilt data-tilt-scale='1.1' alt="">
               </div>
               <div class="gallery__item col-md-2">
-                <img src="img/technologies/bootstrap.png" alt="">
+                <img src="img/technologies/bootstrap.png" data-tilt data-tilt-scale='1.1' alt="">
               </div>
           </div>
         </div>
         <div class="row">
           <div class="tech-gallery col-md-10 mt-5 mb-5 mx-auto">
             <div class="gallery__item col-md-2">
-              <img src="img/technologies/react.png" alt="">
+              <img src="img/technologies/react.png" data-tilt data-tilt-scale='1.1' alt="">
             </div>
             <div class="gallery__item col-md-2">
-              <img src="img/technologies/redux.png" alt="">
+              <img src="img/technologies/redux.png" data-tilt data-tilt-scale='1.1' alt="">
             </div>
             <div class="gallery__item col-md-2">
-              <img src="img/technologies/electron.png" alt="">
+              <img src="img/technologies/electron.png" data-tilt data-tilt-scale='1.1' alt="">
             </div>
             <div class="gallery__item col-md-2">
-              <img src="img/technologies/php.png" alt="">
+              <img src="img/technologies/php.png" data-tilt data-tilt-scale='1.1' alt="">
             </div>
             <div class="gallery__item col-md-2">
-              <img src="img/technologies/sql.png" alt="">
+              <img src="img/technologies/sql.png" data-tilt data-tilt-scale='1.1' alt="">
             </div>
           </div>
         </div>
@@ -197,16 +181,16 @@
           <h4 class='mt-5 mb-3 text-center'>Inne</h4>
           <div class="tech-gallery col-md-10 mt-4 mx-auto">
             <div class="gallery__item col-md-2">
-              <img src="img/technologies/git.png" alt="">
+              <img src="img/technologies/git.png" data-tilt data-tilt-scale='1.1' alt="">
             </div>
             <div class="gallery__item col-md-2">
-              <img src="img/technologies/github.png" alt="">
+              <img src="img/technologies/github.png" data-tilt data-tilt-scale='1.1' alt="">
             </div>
             <div class="gallery__item col-md-2">
-              <img src="img/technologies/photoshop.png" alt="">
+              <img src="img/technologies/photoshop.png" data-tilt data-tilt-scale='1.1' alt="">
             </div>
             <div class="gallery__item col-md-2">
-              <img src="img/technologies/fl.png" alt="">
+              <img src="img/technologies/fl.png" data-tilt data-tilt-scale='1.1' alt="">
             </div>
           </div>
         </div>
@@ -317,47 +301,39 @@
     </div>
     <section class="contact p-5">
       <div class="container">
-        <form class='col-md-10 col-lg-8 col-xl-6 mx-auto mt-5'>
+        <form action='https://formsubmit.co/wojciech.kondziela@onet.pl' method="POST" class='col-md-10 col-lg-8 col-xl-6 mx-auto mt-5' autocomplete="off">
           <h4 class='text-center mb-5'>Masz pytanie? Napisz do mnie.</h4>
           <div class="form-outline mb-4">
-            <input type="text" id="user-name" class="form-control" />
+            <input type="text" name='name' id="user-name" class="form-control" required />
             <label class="form-label" for="user-name">Imię</label>
           </div>
           <div class="form-outline mb-4">
-            <input type="email" id="user-email" class="form-control" />
+            <input type="email" name='email' id="user-email" class="form-control" required />
             <label class="form-label" for="user-email">Adres email</label>
           </div>
           <div class="form-outline mb-4">
-            <textarea class="form-control" id="message" rows="4"></textarea>
+            <textarea class="form-control" name='message' id="message" rows="4"></textarea>
             <label class="form-label" for="message">Wiadomość</label>
           </div>
+          <input type="hidden" name='_next' value="http://127.0.0.1:5500/index.html#contact__hook">
           <button type="submit" class="btn btn-block mb-4 submit-btn">Wyślij</button>
         </form>
       </div>
     </section>
     </main>
-    <!-- <footer class="text-center text-lg-start bg-light text-muted">
+    <footer class="text-center text-lg-start bg-light text-muted">
       <section class="d-flex justify-content-center p-4 border-bottom">
         <div class="me-5 d-none d-lg-block">
-          <span>Znajdź nas na social mediach:</span>
+          <span>Znajdź mnie na social mediach:</span>
         </div>
         <div>
-          <a href="" class="me-4 text-reset">
+          <a href="https://www.facebook.com/profile.php?id=100008960957027" target="_blank" class="me-4 text-reset">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-google"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
+          <a href="https://www.instagram.com/wojtek.kondziela/" target="_blank" class="me-4 text-reset">
             <i class="fab fa-instagram"></i>
           </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
+          <a href="https://github.com/WojtekKondziela" target="_blank" class="me-4 text-reset">
             <i class="fab fa-github"></i>
           </a>
         </div>
@@ -365,43 +341,18 @@
       <section class="">
         <div class="container text-center text-md-start mt-5">
           <div class="row mt-3">
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <p id='about'>
-                Witamy w sklepie Overcoated.com. Specjalizujemy się w modzie męskiej, a inspiracje czerpiemy z trendów panujących obecnie jak i dekady temu. Posiadamy wiele klasycznych części męskiej garderoby, lecz nie brakuje także nowoczesnych stylizacji. Wierzymy, że każdy znajdzie tu tego, czego szuka i nie zawiedzie się na jakości naszych ubrań.
-              </p>
-            </div>
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <h6 class="text-uppercase fw-bold mb-4">
-                Informacje
+                Przejdź do
               </h6>
               <p>
-                <a href="#!" class="text-reset">Tabela rozmiarów</a>
+                <a href="#" class="text-reset">Strona główna</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Regulamin</a>
+                <a href="#aboutme__hook" class="text-reset">O mnie</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Polityka prywatności</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Franczyza</a>
-              </p>
-            </div>
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">
-                Obsługa klienta
-              </h6>
-              <p>
-                <a href="#!" class="text-reset">Formy płatności</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Koszty i czasy realizacji</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Zwroty i reklamacje</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Pomoc</a>
+                <a href="#contact__hook" class="text-reset">Kontakt</a>
               </p>
             </div>
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
@@ -411,7 +362,7 @@
               <p><i class="fas fa-home me-3"></i> Ustroń, ul. Akacjowa 40</p>
               <p>
                 <i class="fas fa-envelope me-3"></i>
-                wojciech.kondziela@gmail.com
+                wojciech.kondziela@onet.pl
               </p>
               <p><i class="fas fa-phone me-3"></i> 733 811 377</p>
             </div>
@@ -423,7 +374,7 @@
         © 2021 Copyright:
         <a class="text-reset fw-bold" href="https://mdbootstrap.com/">domena.com</a>
       </div>
-    </footer> -->
+    </footer>
 
     <a href="#" class='up-button'>
       <i class='fas fa-chevron-up'></i>

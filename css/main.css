@@ -288,10 +288,18 @@ a.scroll-to-projects i:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 .gallery__item img {
   width: 100%;
+}
+
+.gallery__item:hover {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 800px) {
@@ -428,14 +436,38 @@ a.scroll-to-projects i:hover {
   background-color: rgba(158, 33, 170, 0.8);
 }
 
+/* Overwriting bootstrap form syles :// */
 .form-control:focus ~ .form-label {
   color: #9e21aa !important;
 }
 
-form-control:focus ~ .form-notch .form-notch-trailing {
-  border-top: 0.125rem solid #9e21aa !important;
-  border-bottom: 0.125rem solid #9e21aa !important;
-  border-right: 0.125rem solid #9e21aa !important;
+.form-outline .form-control:focus ~ .form-notch .form-notch-middle {
+  border-bottom: .125rem solid;
+  border-color: #9e21aa;
+}
+
+.form-outline .form-control.active ~ .form-notch .form-notch-leading, .form-outline .form-control:focus ~ .form-notch .form-notch-leading {
+  border-right: none;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.form-outline .form-control:focus ~ .form-notch .form-notch-leading {
+  border-top: 0.125rem solid #9e21aa;
+  border-bottom: 0.125rem solid #9e21aa;
+  border-left: 0.125rem solid #9e21aa;
+}
+
+.form-outline .form-control.active ~ .form-notch .form-notch-trailing, .form-outline .form-control:focus ~ .form-notch .form-notch-trailing {
+  border-left: none;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.form-outline .form-control:focus ~ .form-notch .form-notch-trailing {
+  border-top: 0.125rem solid #9e21aa;
+  border-bottom: 0.125rem solid #9e21aa;
+  border-right: 0.125rem solid #9e21aa;
 }
 
 * {

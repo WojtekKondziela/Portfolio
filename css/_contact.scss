@@ -18,12 +18,32 @@
     }
 }
 
+/* Overwriting bootstrap form syles :// */
+
 .form-control:focus~.form-label{
     color:rgba(158, 33, 170, 1) !important;
 }
 
-form-control:focus~.form-notch .form-notch-trailing{
-    border-top:.125rem solid rgba(158, 33, 170, 1) !important;
-    border-bottom:.125rem solid rgba(158, 33, 170, 1) !important;
-    border-right:.125rem solid rgba(158, 33, 170, 1) !important;
+.form-outline .form-control:focus~.form-notch .form-notch-middle{
+    border-bottom:.125rem solid;
+    border-color:rgba(158, 33, 170, 1)
+}
+
+.form-outline .form-control.active~.form-notch .form-notch-leading,.form-outline .form-control:focus~.form-notch .form-notch-leading{
+    border-right:none;
+    -webkit-transition:all .2s linear;
+    transition:all .2s linear
+}
+
+.form-outline .form-control:focus~.form-notch .form-notch-leading{
+    border-top:.125rem solid rgba(158, 33, 170, 1);border-bottom:.125rem solid rgba(158, 33, 170, 1);border-left:.125rem solid rgba(158, 33, 170, 1)};
+
+.form-outline .form-control.active~.form-notch .form-notch-trailing,.form-outline .form-control:focus~.form-notch .form-notch-trailing{
+    border-left:none;
+    -webkit-transition:all .2s linear;
+    transition:all .2s linear
+}
+
+.form-outline .form-control:focus~.form-notch .form-notch-trailing{
+    border-top:.125rem solid rgba(158, 33, 170, 1);border-bottom:.125rem solid rgba(158, 33, 170, 1);border-right:.125rem solid rgba(158, 33, 170, 1)
 }
