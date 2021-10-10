@@ -149,6 +149,9 @@ header a.scroll-down-to-site i:hover {
   .scroll-down-to-site {
     opacity: 1;
   }
+  #typewriterHeading {
+    text-align: center;
+  }
 }
 
 .aboutme {
